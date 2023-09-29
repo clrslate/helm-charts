@@ -11,7 +11,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 22.0.3
-    created: "2023-09-29T18:42:14.246695+05:30"
+    created: "2023-09-29T18:53:16.1229118+05:30"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -40,4 +40,4 @@ entries:
     urls:
     - https://clrslate.github.io/helm-repo/keycloak-17.0.0.tgz
     version: 17.0.0
-generated: "2023-09-29T18:42:14.23779+05:30"
+generated: "2023-09-29T18:53:16.1144518+05:30"
