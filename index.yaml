@@ -3,7 +3,7 @@ entries:
   dns-management-stack:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-05-07T12:20:59.1676724+05:30"
+    created: "2024-05-07T13:11:38.607752+05:30"
     description: A Helm chart to enable DNS management on clrslate platform
     digest: b9092e7e5795dc1e77f94f4ff94310b3fedb0724959af6c488f508b5e99d6554
     icon: https://github.com/kubernetes-sigs/external-dns/raw/master/docs/img/external-dns.png
@@ -25,7 +25,7 @@ entries:
   istio-gateway:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-05-07T12:20:59.1687754+05:30"
+    created: "2024-05-07T13:11:38.6082889+05:30"
     description: A Helm chart to configure istio gateway with cert-manager
     digest: d307fc672147eae0c50bc5397fb18786a91bc6104437f64f541c1a5f7b054f39
     keywords:
@@ -52,7 +52,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 22.0.3
-    created: "2024-05-07T12:20:59.1902292+05:30"
+    created: "2024-05-07T13:11:38.619729+05:30"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -84,7 +84,7 @@ entries:
   observability-stack:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-05-07T12:20:59.2814598+05:30"
+    created: "2024-05-07T13:11:38.6763763+05:30"
     dependencies:
     - name: kube-prometheus-stack
       repository: https://prometheus-community.github.io/helm-charts
@@ -116,10 +116,10 @@ entries:
   self-signed-issuer:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-05-07T12:20:59.2825349+05:30"
+    created: "2024-05-07T13:11:38.6769092+05:30"
     description: A Helm chart for creating a self-signed issuer for cert-issuer for
       local setup
-    digest: 685b8a70608ed65ef0fdce00babbee8cf8879a83e99ed44acd68f6a02a053cc9
+    digest: 9282e9e922820c437d068fee440c0f9058b1a21fb4273a7679ede573ea041e1d
     maintainers:
     - email: piyush@clrslate.io
       name: ClrSlate
@@ -129,4 +129,4 @@ entries:
     urls:
     - https://clrslate.github.io/helm-repo/self-signed-issuer-0.1.0.tgz
     version: 0.1.0
-generated: "2024-05-07T12:20:59.1641462+05:30"
+generated: "2024-05-07T13:11:38.6061103+05:30"
