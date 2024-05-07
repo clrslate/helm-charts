@@ -1,0 +1,14 @@
+apiVersion: v2
+name: istio-gateway
+description: A Helm chart to configure istio gateway with cert-manager
+type: application
+version: 0.1.0
+appVersion: "1.16.0"
+keywords:
+  - istio
+  - dns
+  - cert-manager
+maintainers:
+- name: ClrSlate
+  url: https://github.com/clrslate/helm-repo
+  email: piyush@clrslate.io

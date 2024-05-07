@@ -1,0 +1,10 @@
+apiVersion: v2
+name: self-signed-issuer
+description: A Helm chart for creating a self-signed issuer for cert-issuer for local setup
+type: application
+version: 0.1.0
+appVersion: "1.16.0"
+maintainers:
+- name: ClrSlate
+  url: https://github.com/clrslate/helm-repo
+  email: piyush@clrslate.io

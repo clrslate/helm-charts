@@ -1,0 +1,7 @@
+apiToken:
+  secretName: cloudflare-api-token-secret
+  secretKey: api-token
+notification:
+  email: kunal@gobuncha.com
+certificate:
+  issuerName: cluster-cert-issuer

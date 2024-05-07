@@ -1,0 +1,7 @@
+# ingress:
+#   domain: sub.example.com
+
+certificate:
+  issuerName: cluster-cert-issuer
+istio:
+  selector: ingressgateway

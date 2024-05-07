@@ -1,0 +1,18 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: {{ .Release.Name }}-cert
+  namespace: istio-system
+spec:
+  secretName: "{{ .Release.Name }}-tls"
+  commonName: '*.{{ .Values.ingress.domain }}'
+  isCA: false
+  issuerRef:
+    group: cert-manager.io
+    kind: ClusterIssuer
+    name: {{ .Values.certificate.issuerName }}
+  dnsNames:
+    - '*.{{ .Values.ingress.domain }}'
+  usages:
+    - server auth
+    - client auth

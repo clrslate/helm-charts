@@ -1,5 +1,46 @@
 apiVersion: v1
 entries:
+  dns-management-stack:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-05-07T12:03:37.0802015+05:30"
+    description: A Helm chart to enable DNS management on clrslate platform
+    digest: b9092e7e5795dc1e77f94f4ff94310b3fedb0724959af6c488f508b5e99d6554
+    icon: https://github.com/kubernetes-sigs/external-dns/raw/master/docs/img/external-dns.png
+    keywords:
+    - external-dns
+    - dns
+    - cert-manager
+    - letsencrypt
+    - cloudflare
+    maintainers:
+    - email: piyush@clrslate.io
+      name: ClrSlate
+      url: https://github.com/clrslate/helm-repo
+    name: dns-management-stack
+    type: application
+    urls:
+    - https://clrslate.github.io/helm-repo/dns-management-stack-0.1.0.tgz
+    version: 0.1.0
+  istio-gateway:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-05-07T12:03:37.0808061+05:30"
+    description: A Helm chart to configure istio gateway with cert-manager
+    digest: d307fc672147eae0c50bc5397fb18786a91bc6104437f64f541c1a5f7b054f39
+    keywords:
+    - istio
+    - dns
+    - cert-manager
+    maintainers:
+    - email: piyush@clrslate.io
+      name: ClrSlate
+      url: https://github.com/clrslate/helm-repo
+    name: istio-gateway
+    type: application
+    urls:
+    - https://clrslate.github.io/helm-repo/istio-gateway-0.1.0.tgz
+    version: 0.1.0
   keycloak:
   - annotations:
       category: DeveloperTools
@@ -11,7 +52,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 22.0.3
-    created: "2024-05-07T10:30:19.4331603+05:30"
+    created: "2024-05-07T12:03:37.0897733+05:30"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -43,7 +84,7 @@ entries:
   observability-stack:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-05-07T10:30:19.4845654+05:30"
+    created: "2024-05-07T12:03:37.1516484+05:30"
     dependencies:
     - name: kube-prometheus-stack
       repository: https://prometheus-community.github.io/helm-charts
@@ -72,4 +113,20 @@ entries:
     urls:
     - https://clrslate.github.io/helm-repo/observability-stack-0.1.0.tgz
     version: 0.1.0
-generated: "2024-05-07T10:30:19.4102849+05:30"
+  self-signed-issuer:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-05-07T12:03:37.1527165+05:30"
+    description: A Helm chart for creating a self-signed issuer for cert-issuer for
+      local setup
+    digest: 685b8a70608ed65ef0fdce00babbee8cf8879a83e99ed44acd68f6a02a053cc9
+    maintainers:
+    - email: piyush@clrslate.io
+      name: ClrSlate
+      url: https://github.com/clrslate/helm-repo
+    name: self-signed-issuer
+    type: application
+    urls:
+    - https://clrslate.github.io/helm-repo/self-signed-issuer-0.1.0.tgz
+    version: 0.1.0
+generated: "2024-05-07T12:03:37.0796985+05:30"
