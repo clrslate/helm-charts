@@ -11,7 +11,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 22.0.3
-    created: "2024-05-07T09:40:31.0609139+05:30"
+    created: "2024-05-07T10:30:19.4331603+05:30"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -43,7 +43,7 @@ entries:
   observability-stack:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-05-07T09:40:31.1166548+05:30"
+    created: "2024-05-07T10:30:19.4845654+05:30"
     dependencies:
     - name: kube-prometheus-stack
       repository: https://prometheus-community.github.io/helm-charts
@@ -55,7 +55,7 @@ entries:
       repository: https://grafana.github.io/helm-charts
       version: 6.15.5
     description: Observability stack customized for ClrSlate Platform
-    digest: 1685939b1a6cbdfb8c935fd8a3ee6a9eee7b89f6bb6f64a127add4dd520ce968
+    digest: 2725353f2d858180e521cf6d340c2d89e0c8d94323f0ebba262a747c4c08fcbb
     icon: https://bitnami.com/assets/stacks/prometheus/img/prometheus-stack-220x234.png
     keywords:
     - prometheus
@@ -72,4 +72,4 @@ entries:
     urls:
     - https://clrslate.github.io/helm-repo/observability-stack-0.1.0.tgz
     version: 0.1.0
-generated: "2024-05-07T09:40:31.049559+05:30"
+generated: "2024-05-07T10:30:19.4102849+05:30"

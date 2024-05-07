@@ -1,8 +1,8 @@
 ingress:
   enabled: false
-#   gateway: # istio gateway to use
-#   urls:
-#     grafana: # grafana url to expose
+  gateway: '' # istio gateway to use
+  urls:
+    grafana: '' # grafana url to expose
 kube-prometheus-stack:
   grafana:
     dashboardsConfigMaps:
