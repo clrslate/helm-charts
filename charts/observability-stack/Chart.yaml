@@ -22,6 +22,8 @@ dependencies:
   - name: loki
     repository: https://grafana.github.io/helm-charts
     version: 6.3.4
+    condition: loki.enabled
   - name: promtail
     repository: https://grafana.github.io/helm-charts
     version: 6.15.5
+    condition: promtail.enabled

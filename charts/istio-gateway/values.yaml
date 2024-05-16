@@ -4,4 +4,4 @@
 certificate:
   issuerName: cluster-cert-issuer
 istio:
-  selector: ingressgateway
+  gatewaySelector: ingressgateway

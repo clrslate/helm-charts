@@ -38,6 +38,7 @@ kube-prometheus-stack:
       serviceMonitorNamespaceSelector: {}
 
 loki:
+  enabled: false
   deploymentMode: SingleBinary
   loki:
     commonConfig:
@@ -62,3 +63,6 @@ loki:
     replicas: 0
   singleBinary:
     replicas: 1
+
+promtail:
+  enabled: false
