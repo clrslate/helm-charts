@@ -1,7 +1,4 @@
 clusterName: ''
-apiToken:
-  secretName: cloudflare-api-token-secret
-  secretKey: api-token
 notification:
   email: ''
 certificate:
