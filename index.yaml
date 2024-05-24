@@ -3,7 +3,7 @@ entries:
   dns-management-stack:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-05-16T05:44:40.133017+05:30"
+    created: "2024-05-24T15:47:54.8858428+05:30"
     description: A Helm chart to enable DNS management on clrslate platform
     digest: b9092e7e5795dc1e77f94f4ff94310b3fedb0724959af6c488f508b5e99d6554
     icon: https://github.com/kubernetes-sigs/external-dns/raw/master/docs/img/external-dns.png
@@ -25,7 +25,7 @@ entries:
   istio-gateway:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-05-16T05:44:40.1335728+05:30"
+    created: "2024-05-24T15:47:54.8921619+05:30"
     description: A Helm chart to configure istio gateway with cert-manager
     digest: 75cfd2974d732c77a92c82047325abea7b9a8fee8187ea4ff54f73d9c935a364
     keywords:
@@ -52,7 +52,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 22.0.3
-    created: "2024-05-16T05:44:40.1549132+05:30"
+    created: "2024-05-24T15:47:56.2712202+05:30"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -84,7 +84,7 @@ entries:
   observability-stack:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-05-16T05:44:40.1994381+05:30"
+    created: "2024-05-24T15:47:56.3160109+05:30"
     dependencies:
     - name: kube-prometheus-stack
       repository: https://prometheus-community.github.io/helm-charts
@@ -98,7 +98,7 @@ entries:
       repository: https://grafana.github.io/helm-charts
       version: 6.15.5
     description: Observability stack customized for ClrSlate Platform
-    digest: 6071832488bf621c9f08209ad52411e0b4b5fb1f22f5ba3ffa22e66a7abf5e8b
+    digest: 4aabb19137e20baaa21618427ab3af65cb93f3cbceb4f4fff6c3c6d4df9eb1ac
     icon: https://bitnami.com/assets/stacks/prometheus/img/prometheus-stack-220x234.png
     keywords:
     - prometheus
@@ -118,7 +118,7 @@ entries:
   self-signed-issuer:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-05-16T05:44:40.2103446+05:30"
+    created: "2024-05-24T15:47:56.4927718+05:30"
     description: A Helm chart for creating a self-signed issuer for cert-issuer for
       local setup
     digest: 9282e9e922820c437d068fee440c0f9058b1a21fb4273a7679ede573ea041e1d
@@ -131,4 +131,4 @@ entries:
     urls:
     - https://clrslate.github.io/helm-repo/self-signed-issuer-0.1.0.tgz
     version: 0.1.0
-generated: "2024-05-16T05:44:40.1244783+05:30"
+generated: "2024-05-24T15:47:54.8778969+05:30"
