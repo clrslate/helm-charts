@@ -5,12 +5,16 @@ metadata:
 spec:
   acme:
     server: https://acme-v02.api.letsencrypt.org/directory
+    {{- if .Values.notification.email }}
     email: {{ .Values.notification.email }}
+    {{- end }}
     privateKeySecretRef:
       name: issuer-account-key
     solvers:
     - dns01:
+        {{- if eq .Values.dns.provider "cloudflare" }}
         cloudflare:
           apiTokenSecretRef:
-            name: {{ .Values.apiToken.secretName }}
-            key: {{ .Values.apiToken.secretKey }}
+            name: {{ .Values.cloudflare.apiToken.secretName }}
+            key: {{ .Values.cloudflare.apiToken.secretKey }}
+        {{- end }}

@@ -1,7 +1,26 @@
+clusterName: ''
 apiToken:
   secretName: cloudflare-api-token-secret
   secretKey: api-token
 notification:
-  email: kunal@gobuncha.com
+  email: ''
 certificate:
   issuerName: cluster-cert-issuer
+logging:
+  level: debug
+  format: json
+dns:
+  provider: cloudflare
+  registry: txt
+  sources:
+  - istio-gateway
+  annotationFilter: ''
+  labelFilter: 'app.kubernetes.io/managed-by=clrslate'
+  domainFilters: []
+  excludeDomains: []
+cloudflare:
+  apiToken:
+    secretName: cloudflare-api-token-secret
+    secretKey: api-token
+
+

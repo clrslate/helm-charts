@@ -18,14 +18,33 @@ spec:
       - name: external-dns
         image: registry.k8s.io/external-dns/external-dns:v0.14.1
         args:
-        - --log-level=debug
-        - --log-format=json
-        - --source=service
-        - --source=istio-gateway
-        - --provider=cloudflare
+        - --log-level={{ .Values.logging.level }}
+        - --log-format={{ .Values.logging.format }}
+        - --registry={{ .Values.dns.registry }}
+        {{- range .Values.dns.sources }}
+        - --source={{ . }}
+        {{- end }}
+        {{- if .Values.clusterName }}
+        - --txt-owner-id={{ .Values.clusterName }}
+        {{- end }}
+        {{- if .Values.dns.annotationFilter }}
+        - --annotation-filter={{ .Values.dns.annotationFilter }}
+        {{- end }}
+        {{- if .Values.dns.labelFilter }}
+        - --label-filter={{ .Values.dns.labelFilter }}
+        {{- end }}
+        {{- range .Values.dns.domainFilters }}
+        - --domain-filter={{ . }}
+        {{- end }}
+        {{- range .Values.dns.excludeDomains }}
+        - --exclude-domains={{ . }}
+        {{- end }}
+        - --provider={{.Values.dns.provider }}
+        {{- if eq .Values.dns.provider "cloudflare" }}
         env:
         - name: CF_API_TOKEN
           valueFrom:
             secretKeyRef:
-              name: {{ .Values.apiToken.secretName }}
-              key: {{ .Values.apiToken.secretKey }}
+              name: {{ .Values.cloudflare.apiToken.secretName }}
+              key: {{ .Values.cloudflare.apiToken.secretKey }}
+        {{- end }}

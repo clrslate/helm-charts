@@ -2,7 +2,7 @@ apiVersion: v2
 name: dns-management-stack
 description: A Helm chart to enable DNS management on clrslate platform
 type: application
-version: 0.1.0
+version: 0.2.0
 appVersion: "1.16.0"
 icon: https://github.com/kubernetes-sigs/external-dns/raw/master/docs/img/external-dns.png
 keywords:
