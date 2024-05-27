@@ -12,7 +12,7 @@ dns:
   sources:
   - istio-gateway
   annotationFilter: ''
-  labelFilter: 'app.kubernetes.io/managed-by=clrslate'
+  labelFilter: 'clrslate.io/managed-dns=enabled'
   domainFilters: []
   excludeDomains: []
 cloudflare:

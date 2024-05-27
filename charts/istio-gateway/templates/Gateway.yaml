@@ -3,7 +3,7 @@ kind: Gateway
 metadata:
   name: {{ .Release.Name }}
   labels:
-    app.kubernetes.io/managed-by: clrslate
+    clrslate.io/managed-dns: enabled
 spec:
   selector:
     istio: {{ .Values.istio.gatewaySelector }}

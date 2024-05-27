@@ -5,3 +5,4 @@ certificate:
   issuerName: cluster-cert-issuer
 istio:
   gatewaySelector: ingressgateway
+managedDns: enabled # set this to disabled to disable cert management and dns zone entries using External Dns
