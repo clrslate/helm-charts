@@ -14,8 +14,10 @@ spec:
       protocol: HTTP
     hosts:
     - "*.{{ .Values.ingress.domain }}"
+  {{- if .Values.httpsRedirection }}
     tls:
       httpsRedirect: true
+  {{- end }}
   - port:
       number: 443
       name: https
