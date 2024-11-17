@@ -3,7 +3,7 @@ entries:
   dns-management-stack:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-10-28T20:10:21.3644056+05:30"
+    created: "2024-11-17T21:11:03.9341032+05:30"
     description: A Helm chart to enable DNS management on clrslate platform
     digest: b57d1b56de41957e5950afa48e7f56cc00a0290e80bb05732b408d674f1b29ed
     icon: https://github.com/kubernetes-sigs/external-dns/raw/master/docs/img/external-dns.png
@@ -24,7 +24,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-10-28T20:10:21.3543595+05:30"
+    created: "2024-11-17T21:11:03.9278571+05:30"
     description: A Helm chart to enable DNS management on clrslate platform
     digest: b9092e7e5795dc1e77f94f4ff94310b3fedb0724959af6c488f508b5e99d6554
     icon: https://github.com/kubernetes-sigs/external-dns/raw/master/docs/img/external-dns.png
@@ -46,7 +46,25 @@ entries:
   istio-gateway:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-10-28T20:10:21.3674171+05:30"
+    created: "2024-11-17T21:11:03.9471536+05:30"
+    description: A Helm chart to configure istio gateway with cert-manager
+    digest: a1019698730da971165cd3bf96f51d3630caf10ae87a325386c1a98847f4b7d4
+    keywords:
+    - istio
+    - dns
+    - cert-manager
+    maintainers:
+    - email: piyush@clrslate.io
+      name: ClrSlate
+      url: https://github.com/clrslate/helm-repo
+    name: istio-gateway
+    type: application
+    urls:
+    - https://clrslate.github.io/helm-repo/istio-gateway-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-11-17T21:11:03.9471536+05:30"
     description: A Helm chart to configure istio gateway with cert-manager
     digest: 10b6bb1fe961889ede7b22d7c92e8df27efc323cf4e76c4433fc3539cc956825
     keywords:
@@ -64,7 +82,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-10-28T20:10:21.3674171+05:30"
+    created: "2024-11-17T21:11:03.9418733+05:30"
     description: A Helm chart to configure istio gateway with cert-manager
     digest: 86dd1a3950ee053d12841a9b6ce355da0f1aac03166dac985fc4e2607380cb3c
     keywords:
@@ -91,7 +109,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 22.0.3
-    created: "2024-10-28T20:10:21.3744254+05:30"
+    created: "2024-11-17T21:11:03.958031+05:30"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -123,7 +141,7 @@ entries:
   observability-stack:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-10-28T20:10:21.4039971+05:30"
+    created: "2024-11-17T21:11:03.9900668+05:30"
     dependencies:
     - name: kube-prometheus-stack
       repository: https://prometheus-community.github.io/helm-charts
@@ -157,7 +175,7 @@ entries:
   self-signed-issuer:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-10-28T20:10:21.4070059+05:30"
+    created: "2024-11-17T21:11:03.9964572+05:30"
     description: A Helm chart for creating a self-signed issuer for cert-issuer for
       local setup
     digest: 9282e9e922820c437d068fee440c0f9058b1a21fb4273a7679ede573ea041e1d
@@ -170,4 +188,4 @@ entries:
     urls:
     - https://clrslate.github.io/helm-repo/self-signed-issuer-0.1.0.tgz
     version: 0.1.0
-generated: "2024-10-28T20:10:21.343704+05:30"
+generated: "2024-11-17T21:11:03.9113064+05:30"

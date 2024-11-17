@@ -1,10 +1,10 @@
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
-  name: {{ .Release.Name }}-cert
+  name: {{ .Release.Name }}-{{ .Release.Namespace }}-cert
   namespace: istio-system
 spec:
-  secretName: "{{ .Release.Name }}-tls"
+  secretName: "{{ .Release.Name }}-{{ .Release.Namespace }}-tls"
   commonName: '*.{{ .Values.ingress.domain }}'
   isCA: false
   issuerRef:

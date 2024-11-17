@@ -24,6 +24,6 @@ spec:
       protocol: HTTPS
     tls:
       mode: SIMPLE
-      credentialName: "{{ .Release.Name }}-tls"
+      credentialName: "{{ .Release.Name }}-{{ .Release.Namespace }}-tls"
     hosts:
     - "*.{{ .Values.ingress.domain }}"
